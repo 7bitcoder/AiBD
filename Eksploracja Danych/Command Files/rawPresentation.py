@@ -1,7 +1,7 @@
 import pandas as pd
 from tqdm import tqdm as tk
 
-df = pd.read_csv("Raw_Data/billboard.csv", encoding="mac_latin2")
+df = pd.read_csv("../Original Data/billboard.csv", encoding="mac_latin2")
 # Melting
 with pd.option_context('display.max_columns', None):  # more options can be specified also
     #df.info()
@@ -11,7 +11,6 @@ with pd.option_context('display.max_columns', None):  # more options can be spec
     result = pd.DataFrame(columns=("genre"
                                    , "topTen", "tracks number"))
     # print(grouped)
-    print(len(grouped))
     t = tk(total=len(grouped))  # Initialise
     for name, group in grouped:
         t.update()

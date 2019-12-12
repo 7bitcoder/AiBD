@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe80b39f-8491-4fa9-a12e-faefef11dc6f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Eksploracja Danych/code/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Eksploracja Danych/code/.idea/code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Eksploracja Danych/code/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Eksploracja Danych/code/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Eksploracja Danych/code/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Eksploracja Danych/code/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Eksploracja Danych/code/Raw_Data/billboard.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Eksploracja Danych/code/beauty.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Eksploracja Danych/code/beauty.csv.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Eksploracja Danych/code/excercise1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Eksploracja Danych/code/exercise.csv.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Eksploracja Danych/code/rawPresentation.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +35,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Eksploracja Danych/Command Files" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RunDashboard">
