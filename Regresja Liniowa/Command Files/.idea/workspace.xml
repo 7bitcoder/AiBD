@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbc5507d-a8ae-4847-a14f-144d31acbc43" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zad2.py" beforeDir="false" afterPath="$PROJECT_DIR$/zad2.py" afterDir="false" />
-    </list>
+    <list default="true" id="bbc5507d-a8ae-4847-a14f-144d31acbc43" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +37,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.zad2">
+  <component name="RunManager" selected="Python.regresja">
     <configuration name="regresja" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Command Files" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,8 +82,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.zad2" />
         <item itemvalue="Python.regresja" />
+        <item itemvalue="Python.zad2" />
       </list>
     </recent_temporary>
   </component>
