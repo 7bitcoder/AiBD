@@ -110,7 +110,7 @@ fig3 = (p9.ggplot(p9.aes(x='x1', y='x2', color='y'), data=shortData)
 
 print(fig3)
 ```
-![fig 1](./Figure_1.jpeg)
+![fig 1](./Figure_1.png)
 ```python
 #przewidywanie na podstawie modelu y
 shortData['y_predict'] = results.predict()
@@ -119,7 +119,7 @@ fig3_res = (p9.ggplot(p9.aes(x='x1', y='x2', color='y_predict'), data=shortData)
             + p9.geom_point())
 print(fig3_res)
 ```
-![fig 1](./Figure_2.jpeg)
+![fig 1](./Figure_2.png)
 ```python
 #wyznacznenie błędu przewidywań
 shortData['residuals'] = shortData['y'] - shortData['y_predict']
@@ -128,7 +128,7 @@ fig3_res = (p9.ggplot(p9.aes(x='x1', y='x2', color='residuals'), data=shortData)
             + p9.geom_point())
 print(fig3_res)
 ```
-![fig 1](./Figure_3.jpeg)
+![fig 1](./Figure_3.png)
 ```python
 #przewidywanie dla nowych danych bez y wzorcowego
 pred = data.tail(20)
