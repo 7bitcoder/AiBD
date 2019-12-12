@@ -1,5 +1,6 @@
 # Lab 4
 Przez niepoprawne działanie i brak czasu na naprawę jupytera wyniki prezentuję w readme
+## Excercise.csv - część pierwsza
 ```python
 import statsmodels.formula.api as smf
 
@@ -137,5 +138,85 @@ fig4 = (p9.ggplot(p9.aes(x='x1', y='x2', color='y'), data=pred)
 print(fig4)
 ```
 ![fig 1](./Figure_4.png)
+##beauty.csv - część druga
+```python
+import numpy as np
 
+import statsmodels.api as sm
 
+import statsmodels.formula.api as smf
+
+import pandas as pd
+import plotnine as p9
+
+data = pd.read_csv("beauty.csv")
+print(data)
+```
+```
+tenured  profnumber  minority  ...  btystdvariance  btystdavepos  btystdaveneg
+0          0           1         1  ...        2.129806      0.201567      0.000000
+1          1           2         0  ...        1.386081      0.000000     -0.826081
+2          1           3         0  ...        2.537435      0.000000     -0.660333
+3          1           4         0  ...        1.760577      0.000000     -0.766312
+4          0           5         0  ...        1.693100      1.421450      0.000000
+..       ...         ...       ...  ...             ...           ...           ...
+458        0          93         0  ...        3.107088      1.143040      0.000000
+459        0          93         0  ...        3.107088      1.143040      0.000000
+460        0          94         1  ...        3.018447      0.332051      0.000000
+461        0          94         1  ...        3.018447      0.332051      0.000000
+462        0          94         1  ...        3.018447      0.332051      0.000000
+
+[463 rows x 64 columns]
+```
+```python
+tworzenie złożonego modelu
+results = smf.ols('courseevaluation~btystdave+age+beautyflowerdiv+beautyfupperdiv+beautymlowerdiv', data=data).fit()
+wyn = results.params
+print(results.summary())
+```
+```
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       courseevaluation   R-squared:                       0.056
+Model:                            OLS   Adj. R-squared:                  0.046
+Method:                 Least Squares   F-statistic:                     5.450
+Date:                Thu, 12 Dec 2019   Prob (F-statistic):           6.96e-05
+Time:                        18:36:40   Log-Likelihood:                -370.34
+No. Observations:                 463   AIC:                             752.7
+Df Residuals:                     457   BIC:                             777.5
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+===================================================================================
+                      coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------
+Intercept           4.1944      0.304     13.805      0.000       3.597       4.791
+btystdave           0.2675      0.115      2.326      0.020       0.041       0.494
+age                 0.0015      0.003      0.509      0.611      -0.004       0.007
+beautyflowerdiv    -0.0326      0.028     -1.173      0.241      -0.087       0.022
+beautyfupperdiv     0.0225      0.027      0.830      0.407      -0.031       0.076
+beautymlowerdiv    -0.0668      0.027     -2.514      0.012      -0.119      -0.015
+==============================================================================
+Omnibus:                       21.453   Durbin-Watson:                   1.450
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               23.677
+Skew:                          -0.553   Prob(JB):                     7.22e-06
+Kurtosis:                       2.928   Cond. No.                         632.
+==============================================================================
+```
+```python
+fig3 = (p9.ggplot(p9.aes(x='btystdave',y='age', color='courseevaluation'), data=data)
+        + p9.geom_point())
+
+print(fig3)
+```
+![fig 1](./Figure_1_2.png)
+```python
+data['courseevaluation_predict'] = results.predict()
+
+#wyres błędu
+data['residuals'] = data['courseevaluation'] - data['courseevaluation_predict']
+
+fig3_res = (p9.ggplot(p9.aes(x='btystdave',y='age', color='residuals'), data=data)
+            + p9.geom_point())
+print(fig3_res)
+```
+![fig 1](./Figure_2_2.png)
