@@ -403,7 +403,7 @@ with pd.option_context('display.max_columns', None):  # more options can be spec
 [317 rows x 6 columns]
 ```
 ```python 
-with pd.option_context('display.max_columns', None):  # more options can be specified also
+with pd.option_context('display.max_columns', None):
 
     ranks = pd.merge(copy, songs, on=["year", "artist.inverted", "track", "time", "genre"])
     ranks = ranks[["song_id", "date", "rank", "time"]]
