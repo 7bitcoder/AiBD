@@ -208,7 +208,7 @@ fig3 = (p9.ggplot(p9.aes(x='btystdave',y='age', color='courseevaluation'), data=
 
 print(fig3)
 ```
-![fig 1](./Figure_1_2.png)
+![fig 1](./Figure_2_1.png)
 ```python
 data['courseevaluation_predict'] = results.predict()
 
