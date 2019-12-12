@@ -1,1 +1,2 @@
-PLik billboard.csv - ranking hitów muzycznych, togodniowe miejsce w tabeli, tytu³ czas trwania utworu itp.
+Plik excercise zawiera wynik y i dane wejœciowe x1, x2 dla 40 punktów danych, z dalszymi 20 punktami z danymi wejœciowymi, ale bez wyniku.
+Plik beauty zawiera dane z pracy Hamermesha i Parker (2005) na temat oceny piêkna instruktorów i jakoœci uch nauczania dla kilku kursów na University of Texas.
